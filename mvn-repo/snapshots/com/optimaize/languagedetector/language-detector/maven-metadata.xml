@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.optimaize.languagedetector</groupId>
+  <artifactId>language-detector</artifactId>
+  <versioning>
+    <versions>
+      <version>0.7-ga1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20171109232337</lastUpdated>
+  </versioning>
+</metadata>
