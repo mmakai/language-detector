@@ -5,7 +5,8 @@
   <versioning>
     <versions>
       <version>0.7-ga1-SNAPSHOT</version>
+      <version>0.8-ga1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20171109232337</lastUpdated>
+    <lastUpdated>20190122165300</lastUpdated>
   </versioning>
 </metadata>

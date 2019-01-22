@@ -5,7 +5,7 @@
     <groupId>com.optimaize.languagedetector</groupId>
     <artifactId>language-detector</artifactId>
     <name>language-detector</name>
-    <version>0.7-ga1-SNAPSHOT</version>
+    <version>0.8-ga1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <url>https://github.com/optimaize/language-detector</url>
@@ -152,6 +152,28 @@
             <plugin>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.4</version>
+            </plugin>
+
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-shade-plugin</artifactId>
+              <version>3.2.1</version>
+              <executions>
+                <execution>
+                  <phase>package</phase>
+                  <goals>
+                    <goal>shade</goal>
+                  </goals>
+                  <configuration>
+                    <relocations>
+                      <relocation>
+                        <pattern>com.google.common</pattern>
+                        <shadedPattern>com.optimaize.common</shadedPattern>
+                      </relocation>
+                    </relocations>
+                  </configuration>
+                </execution>
+              </executions>
             </plugin>
 
         </plugins>
